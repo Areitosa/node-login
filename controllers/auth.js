@@ -19,11 +19,11 @@ exports.register = (req, res) => {
 
       if(results.length > 0 ) {
         return res.render('register', {
-          message> 'That email is already in use'
+          message: 'That email is already in use'
         })
       } else if( password !== passwordConfirm) {
         return res.render('register', {
-          message> 'Passwords do not match'
+          message: 'Passwords do not match'
         });
       }
     })
